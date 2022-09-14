@@ -1,0 +1,69 @@
+.header {
+    width: 100%;
+    height: 60px;
+    padding: 5px 20px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 30px;
+    color: #018038;
+}
+
+.header-logo_box img {
+    height: 40px;
+}
+
+/* Action box*/
+.header_actions{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.action-button.btn {
+    margin: 0 10px;
+    padding: 5px 20px;
+    border: none;
+    transition: all ease 0.3s;
+    position: relative;
+}
+
+.action-button.btn .badge {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(30%, -30%);
+    border-radius: 50%;
+}
+
+/* Fixed header */
+
+.fixed-header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    background-color: #fff;
+}
+
+.fixed-header .action-button.btn {
+    color: #018038;
+}

@@ -1,0 +1,39 @@
+.manage-recipes_container {
+    width: 100%;
+}
+
+.manage-recipes_content{
+    width: 100%;
+    padding: 120px 80px;
+}
+
+.manage-recipes_header{
+    width: 100%;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-heading{
+    font-size: 24px;
+}
+
+.manage-recipe_table td{
+    vertical-align: middle;
+}
+
+
+.recipe-form_body .modal-dialog{
+    max-width: 700px;
+}
+
+.recipe-form_body .form-label{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.recipe-form_body h4{
+    margin: 0;
+}

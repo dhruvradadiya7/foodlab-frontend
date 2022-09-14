@@ -1,0 +1,54 @@
+.recipes_listing .card {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+.recipes_listing .card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #00000094;
+    opacity: 0;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.recipes_listing .card-img-overlay:hover {
+    opacity: 1;
+}
+
+.card-img-overlay .recipe_card-short-actions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.card-img-overlay .recipe_card-short-actions i {
+    font-size: 20px;
+    margin: 10px 15px;
+}
+
+.recipe_card-short-actions i.fav {
+    color: #ff5363;
+}
+
+.recipe_card-short-actions i.cart {
+    color: #33fd9f;
+}
+
+.recipe_card-price-box {
+    background-color: #018038;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff;
+}
