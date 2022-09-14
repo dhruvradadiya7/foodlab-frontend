@@ -53,8 +53,13 @@ export const Register = (props) => {
     } catch (e) {
       console.log(e);
       // Respond
-      setMessage(e?.response?.data || "Something went wrong, please try again!");
+      
+      setMessage(e.response.data.code + ", please try again!");
       setType("danger");
+      setTimeout(() => {
+        setMessage("");
+        props.history.push("/register");
+      }, 3000);
     }
   };
 

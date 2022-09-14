@@ -26,6 +26,7 @@ export const Login = (props) => {
   const [type, setType] = useState("success");
   const submit = async (values) => {
     try {
+      console.log(values);
       const { data } = await axios.post(
         "https://foodlab-server.herokuapp.com/auth/login",
         values
@@ -40,11 +41,14 @@ export const Login = (props) => {
         props.history.push(isAdmin() ? "/admin/recipes" : "/recipes");
       }, 1000);
     } catch (e) {
-      console.log(e);
       // Respond
-      setMessage(e?.response?.data || "Something went wrong, please try again!");
+      setMessage(e.response.data.code + ", please try again!");
       setType("danger");
-    }
+      setTimeout(() => {
+        setMessage("");
+        props.history.push("/login");
+      }, 3000);
+    } 
   };
 
   return (
